@@ -1,0 +1,35 @@
+/* 
+display: grid;
+  Detta gör att .container blir en grid-container. 
+  Det betyder att de element som finns inuti .container 
+  kommer att placeras i ett rutnät (grid).
+
+grid-template-columns: 1fr 2fr;
+  Detta definierar hur breda kolumnerna i rutnätet ska vara.
+  1fr betyder att den första kolumnen tar upp en del av det tillgängliga utrymmet.
+  2fr betyder att den andra kolumnen tar upp två gånger så mycket utrymme 
+  som den första kolumnen. 
+  Sammanfattningsvis får den andra kolumnen dubbelt så mycket bredd som den första.
+
+gap: 10px;
+  Detta anger hur mycket utrymme det ska vara mellan rutnätets celler (kolumner och rader).
+  I detta fall kommer det att vara 10 pixlar mellan varje cell, 
+  både horisontellt och vertikalt. */
+
+/* 
+Övning
+  Ändra koden så att det finns 3 kolumner & 3 rader! 
+  Kolumn 1 ska vara hälften så stor som kolumn 2 & 3
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+.item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}

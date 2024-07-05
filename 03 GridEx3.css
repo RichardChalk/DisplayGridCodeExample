@@ -1,0 +1,46 @@
+/* 
+
+display: grid;
+  Detta gör att .container blir en grid-container. 
+  Det betyder att de element som finns inuti .container kommer 
+  att placeras i ett rutnät (grid).
+
+grid-template-columns: repeat(3, 1fr);
+  Detta definierar hur breda kolumnerna i rutnätet ska vara.
+
+repeat(3, 1fr) 
+  betyder att rutnätet ska ha 3 kolumner, 
+  och varje kolumn tar upp en lika stor del av det tillgängliga utrymmet. 
+  1fr står för "1 fraction", vilket betyder en andel av utrymmet. 
+  Så, tre kolumner får varsin lika stor andel av bredden.
+
+grid-template-rows: repeat(2, 100px);
+  Detta definierar hur höga raderna i rutnätet ska vara.
+
+repeat(2, 100px) 
+  betyder att rutnätet ska ha 2 rader, och varje rad ska vara 100 pixlar hög.
+  2 betyder att mönstret ska upprepas 2 ggr
+
+gap: 10px;
+  Detta anger hur mycket utrymme det ska vara mellan rutnätets celler (kolumner och rader).
+  I detta fall kommer det att vara 10 pixlar mellan varje cell, både horisontellt och vertikalt. 
+*/
+
+/* 
+Övning
+  Skapa 4 kolumner & 3 rader (nummer 1-12)
+  Varje rad ska vara 150px hög
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+}
+
+.item {
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+}

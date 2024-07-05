@@ -1,0 +1,38 @@
+/* 
+display: grid;
+  Detta gör att .container blir en grid-container. 
+  Det betyder att de element som finns inuti .container kommer 
+  att placeras i ett rutnät (grid). 
+  Ett rutnät är en layout som delar upp utrymmet i rader och kolumner, 
+  ungefär som ett schackbräde.
+
+grid-template-columns: repeat(2, 1fr);
+  Denna rad definierar hur många kolumner rutnätet ska ha och hur breda de ska vara.
+
+repeat(2, 1fr) 
+  betyder att rutnätet ska ha 2 kolumner, och varje kolumn ska ta upp en 
+  lika stor del av det tillgängliga utrymmet.
+  1fr står för "1 fraction" vilket betyder att varje kolumn får en 
+  lika stor andel av bredden.
+
+gap: 10px;
+  Detta anger hur mycket utrymme det ska vara mellan rutnätets celler (kolumner och rader).
+  I detta fall kommer det att vara 10 pixlar mellan varje cell, både horisontellt och vertikalt. 
+*/
+
+/* 
+Övning
+  Ändra koden så att det finns 2 kolumner av 3 boxar! 
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
