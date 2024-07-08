@@ -1,0 +1,50 @@
+body {
+  /* Centrera all content lodrätt */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: auto;
+
+  box-sizing: border-box;
+  width: 400px;
+  height: 200px;
+
+  /* Centrera hela containern på sidan*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  background: rgba(114, 186, 94, 0.05);
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+
+  /* CENTRERA GRID & GRID ITEMS************************************************************ */
+  /* Centrera grid items vågrätt */
+  justify-items: center;
+  /* Centrera grid items lodrätt */
+  align-items: center;
+  /* Centrera hela griden vågrätt inom sin container */
+  justify-content: center;
+}
+
+.item {
+  /* Om man vill centrera även siffrorna måste .item också bli display:grid; */
+  display: grid;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 213, 70, 0.4);
+  border: 2px dashed rgba(236, 198, 48, 0.5);
+
+  /* CENTRERA SIFFRORNA******************************************************************** */
+  /* Centrera siffrona vågrätt! */
+  justify-content: center;
+  /* Centrera siffrona lodrätt! */
+  align-items: center;
+}
