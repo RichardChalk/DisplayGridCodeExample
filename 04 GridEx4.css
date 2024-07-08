@@ -1,5 +1,5 @@
 body {
-  /* Centrera all content lodrätt */
+  /* Centrera hela containern på sidan - lodrätt*/
   display: grid;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@ body {
   width: 400px;
   height: 200px;
 
-  /* Centrera hela containern på sidan*/
+  /* Centrera hela containern på sidan - vågrätt*/
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
