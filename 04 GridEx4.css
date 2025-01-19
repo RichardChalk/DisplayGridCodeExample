@@ -2,6 +2,9 @@
 /* Se till att innehållet i samtliga grid items placeras längst ner till höger */
 
 body {
+  margin: 0; /* reset */
+  padding: 0; /* reset */
+
   /* Centrera hela containern på sidan - lodrätt*/
   display: grid;
   justify-content: center;
